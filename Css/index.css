@@ -1,0 +1,189 @@
+:root {
+    --red:#E60023;
+    --red-a:rgba(230, 0, 35 ,10%);
+    --gray:#6D6D6D;
+    --background:#FAFAFA;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium';
+
+}
+.page {
+    display: flex;
+    position: relative;
+    
+}
+.side-bar {
+    display: flex;
+    width: 311px;
+    height: 1117px;
+    flex-direction: column;     
+    padding: 35px 90px 35px 35px;
+    position: absolute; 
+    left: 0px;
+    top: 0px;
+    background: var(--background);
+    border-right: 0.5px solid #ABABAB;
+    position: fixed;
+}
+.side-bar .logo {
+    width: 204.39px;
+    height: 50px 
+}
+.side-bar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+
+}
+.side-bar ul li {
+    display: flex;
+    text-decoration: none;
+    margin: 2vh 0;
+}
+.side-bar ul li div {
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    padding: 10px;
+}
+.side-bar ul li div img {
+    width: 19.69px;
+    height: 20px;
+}
+.side-bar ul li:hover div {
+    background-color: var(--red-a) ;  
+}
+.side-bar ul li:hover:nth-child(1) img{
+    content: url("../imgs/iconUl/Mask\ group.png");
+}
+.side-bar ul li:hover:nth-child(2) img{
+    content: url("../imgs/iconUl/Mask\ group\ \(6\).png");
+}
+.side-bar ul li:hover:nth-child(3) img{
+    content: url("../imgs/iconUl/Mask\ group\ \(7\).png");
+}
+.side-bar ul li:hover:nth-child(4) img{
+    content: url("../imgs/iconUl/Mask\ group\ \(8\).png");
+}
+.side-bar ul li:hover:nth-child(5) img{
+    content: url("../imgs/iconUl/Mask\ group\ \(9\).png");
+}
+.side-bar ul li p {
+    color:var(--gray) ;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+.side-bar ul li:hover p {
+    color: var(--red);
+}
+.home-page {
+    display: flex;
+    width: 80%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    flex-direction: column;
+    height: 100vh;
+}
+.home-page .nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} 
+.home-page .nav-bar .search {
+    position: relative;
+    width: 70%;
+}
+.home-page .nav-bar .search input {
+    position: absolute;
+    width: 1014px;
+    top: 3vh;
+    left: 3vw;
+    height: 60px;
+    background: var(--background);
+    border: 1px solid #D8D8D8;
+    border-radius: 12px;
+    font-size: 22px;
+    line-height: 26px;
+    padding-left: 60px;
+    outline: none;
+}
+.home-page .nav-bar .search:hover input {
+    border-color: var(--red);
+    color: var(--red);
+}
+.home-page .nav-bar .search img {
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+    z-index: 2;
+    width: 19.91px;
+    height: 20px; 
+}
+.home-page .nav-bar .search:hover img {
+    content: url("../imgs/nav/Mask\ group\ \(3\)\ .png");
+}
+.home-page .nav-bar .icon {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding:2% 2% 0 0 ;
+}
+.home-page .nav-bar .icon button {
+    width: 147px;
+    color: var(--red);
+    background-color: var(--background);
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid #D8D8D8;
+}
+.home-page .nav-bar .icon button img {
+    padding-right: 10%;
+}
+.home-page .nav-bar .icon button:hover {
+    border: 1px solid var(--red);
+    color: var(--gray);
+    background-color: var(--red-a);
+}
+.home-page .nav-bar .icon button:hover img {
+    content: url("../imgs/nav/Mask\ group\ \(4\)\ .png");
+}
+.g {
+    width: 26px;
+    height: 29px;
+    margin-top: 10px;
+}
+.l {
+    width: 50px;
+    height: 50px;
+}
+.i {
+    width: 5px;
+    height: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.gallery {
+    line-height: 0;
+    column-count: 4;
+    column-gap: 55px;
+    margin-left: -60px;
+    padding: 80px;
+}
+.gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
